@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.skills-title {
+  color: #808080; /* Match the title color with the header */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  margin-top: 20px;
+  text-align: left; /* Align title to the left */
+}
+
+.skills-section {
+  margin-top: 20px;
+}
+
+.skill-box {
+  background-color: rgba(128, 128, 128, 0.2); /* Grey highlight */
+  padding: 15px;
+  border-radius: 20px; /* Squircle effect */
+  margin: 10px 0; /* Space between boxes */
+  font-family: 'Poppins', sans-serif; /* Ensure Poppins font */
+  color: #d1d1cf; /* Set text color to match */
+}
+
+h3 {
+  color: #808080; /* Heading color for sub-sections */
+}

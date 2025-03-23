@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.menu {
+  position: fixed; /* Fix the menu position to stay on the screen */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left side of the viewport */
+  height: 100%; /* Set height to full viewport height */
+  width: 250px; /* Set a fixed width for the menu */
+  background: black; /* Set background color to black */
+  padding: 20px; /* Add padding inside the menu */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Center items horizontally within the menu */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.profile-photo {
+  width: 200px; /* Set width of the profile photo */
+  height: 200px; /* Set height of the profile photo */
+  border-radius: 20%; /* Create a squircle effect */
+  margin-bottom: 10px; /* Space below the photo */
+}
+
+.status {
+  display: flex; /* Use flexbox for the status display */
+  justify-content: center; /* Center status text horizontally */
+  margin-bottom: 40px; /* Space below the status */
+  height:wrap_content;
+}
+
+.available-tag {
+  display: inline-block; /* Allow the tag to have padding and background */
+  background-color: #062d1d; /* Set background color for the tag */
+  color: #4de6a6; /* Set text color */
+  padding: 5px 10px; /* Add padding inside the tag */
+  border-radius: 20px; /* Round the corners of the tag */
+  font-family: 'Poppins', sans-serif; /* Ensure Poppins font */
+}
+
+.menu-links {
+  display: flex; /* Use flexbox for menu links */
+  flex-direction: column; /* Stack links vertically */
+  align-items: center; /* Center links horizontally */
+  width: 100%; /* Make links full width */
+}
+
+.menu-button {
+  display: flex; /* Use flexbox for buttons */
+  align-items: center; /* Align icon and text vertically */
+  margin: 2px 0; /* Space between buttons */
+  color: #d1d1cf; /* Set button text color to greyish */
+  text-decoration: none; /* Remove underline from buttons */
+  width: 75%; /* Ensure full width for buttons */
+  justify-content: center; /* Center text within button */
+  padding: 10px 0; /* Add padding for better spacing */
+  background: transparent; /* Transparent background */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor on hover */
+  transition: transform 0.2s, color 0.2s; /* Smooth transition */
+  font-family: 'Poppins', sans-serif; /* Ensure Poppins font */
+  border-radius:10px;
+}
+
+.menu-button.active {
+  background-color: #171717; /* Highlight active button */
+}
+
+.menu-button:hover {
+  transform: scale(1.1); /* Slightly increase size */
+  color: #4de6a6; /* Change text color to match available for work text */
+  background: transparent; /* Ensure no background highlight */
+}
+
+.social-links {
+  display: flex; /* Use flexbox for social links */
+  justify-content: space-between; /* Space icons evenly */
+  width: 50%; /* Make social links full width */
+  margin-bottom:150px;
+}
+
+.social-icon {
+  font-size: 24px; /* Set size for social icons */
+  color: #d1d1cf; /* Set color for social icons */
+}
+
+.footer {
+  color: #d1d1cf; /* Set footer text color to greyish */
+}
+
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.menu {
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.menu {
+  position: fixed; /* Fix the menu position to stay on the screen */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left side of the viewport */
+  height: 100vh; /* Set height to full viewport height */
+  width: 250px; /* Set a fixed width for the menu */
+  background: black; /* Set background color to black */
+  padding: 20px; /* Add padding inside the menu */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Center items horizontally within the menu */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+
+
+/* Limit menu button height and prevent overflow */
+.menu-button {
+  max-height: 50px; /* Limit button height */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Optional: Adjust status and social links for better fit */
+.status, .social-links {
+  flex-shrink: 0; /* Prevent shrinking */
+}
