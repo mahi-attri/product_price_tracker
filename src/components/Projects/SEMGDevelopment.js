@@ -1,1 +1,0 @@
-// sEMG Sensor Development Details
